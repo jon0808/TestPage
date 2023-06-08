@@ -17,12 +17,16 @@
 
     <script>
       const fetchCat = async (text) => {
-        const OPEN_API_DOMAIN = "https://cataas.com";
-        const response = await fetch(
-          `${OPEN_API_DOMAIN}/cat/says/${text}?json=true`
-        );
-        const responseJson = await response.json();
-        return `${OPEN_API_DOMAIN}/${responseJson.url}`;
+        // https://image.utoimage.com/preview/cp872655/2017/10/201710000048_500.jpg
+    	  // https://image.utoimage.com/preview/cp872655/2018/01/201801015255_500.jpg
+    	  return "https://cdn.aitimes.kr/news/photo/202303/27617_41603_044.jpg";
+
+//        const OPEN_API_DOMAIN = "https://cataas.com";
+//        const response = await fetch(
+//          `${OPEN_API_DOMAIN}/cat/says/${text}?json=true`
+//        );
+//        const responseJson = await response.json();
+//        return `${OPEN_API_DOMAIN}/${responseJson.url}`;
       };
 
       document.getElementById("popUpUnsafe1").addEventListener("click", () => {
